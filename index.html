@@ -313,7 +313,7 @@
     <div class="timer-settings">
         <label>⏱️ Temps de réflexion (secondes)</label>
         <div class="timer-input">
-            <input type="number" id="timerInput" value="25" min="1" max="60" onchange="game.updateTime()">
+            <input type="number" id="timerInput" value="45" min="1" max="60" onchange="game.updateTime()">
             <span class="timer-unit">sec</span>
         </div>
     </div>
@@ -356,7 +356,7 @@
         class PingBuzzer {
             constructor(mode) {
                 this.mode = mode || '2joueurs';
-                this.maxTime = 25;
+                this.maxTime = 45;
                 this.currentTime = 0;
                 this.isRunning = false;
                 this.isPaused = false;
